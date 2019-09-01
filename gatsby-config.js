@@ -5,12 +5,12 @@ module.exports = {
     description: 'This is a blog that talks about the Unique Card Game, Keyforge'
   },
   plugins: [
-    'gatsby-transformer-remark',
+    `gatsby-transformer-remark`,
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: `gatsby-source-filesystem`,
       options: {
-        name: 'pages',
-        path: `{__dirname}/src/pages`
+        name: `pages`,
+        path: `${__dirname}/src/pages`
       }
     }
   ]
