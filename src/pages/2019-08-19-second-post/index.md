@@ -1,7 +1,7 @@
 ---
 path: "/second-post"
 date: "2019-09-01"
-title: "A Test Post"
+title: "Second Post"
 tags: ['test', 'sample']
 excerpt: "This is a test post, enjoy"
 ---
