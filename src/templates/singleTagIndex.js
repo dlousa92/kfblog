@@ -2,11 +2,25 @@ import React from 'react'
 import Header from '../components/Header/Header'
 import { graphql, Link } from 'gatsby'
 
-const SingleTagIndex = ({data}) => {
-  const { edges } = data.allMarkdownRemark
+const SingleTagIndex = ({data, pageContext}) => {
+  const { posts, tagName } = pageContext
   return (
     <div>
-      <div>single tag here</div>
+      <div>
+        Posts about {tagName}
+      </div>
+
+      <ul>
+        {posts.map((post, index) => {
+          return (
+            <li key={index}>
+              <Link to={post.frontmatter.path}>
+                {post.frontmatter.title}
+              </Link>
+            </li>
+          )
+        })}
+      </ul>
     </div>
   )
 }
