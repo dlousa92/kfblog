@@ -15,6 +15,8 @@ const Template = (props) => {
 
       {next && <Link to={next.frontmatter.path}>Next</Link>}
       {prev && <Link to={prev.frontmatter.path}>Previous</Link>}
+
+      <Link to={'/'}>Home</Link>
     </div>
   )
 }
