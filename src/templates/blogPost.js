@@ -1,4 +1,5 @@
 import React from 'react'
+import Header from '../components/Header/Header'
 import {graphql, Link} from 'gatsby'
 
 const Template = (props) => {
@@ -10,6 +11,7 @@ const Template = (props) => {
   const content = markdown.html
   return (
     <div>
+      <Header />
       <h1>{title}</h1>
       <div dangerouslySetInnerHTML={{__html: content}} />
 

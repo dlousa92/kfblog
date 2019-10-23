@@ -1,5 +1,17 @@
 const path = require('path')
 
+const createAboutPage = (createPage) => {
+  const aboutPageTemplate = path.resolve('src/templates/aboutPage.js')
+
+  createPage({
+    path: '/about',
+    component: aboutPageTemplate,
+    context: {
+      test: 'test'
+    }
+  })
+}
+
 const createTagPages = (createPage, posts) => {
   const allTagsIndexTemplate = path.resolve('src/templates/allTagsIndex.js')
   const singleTagIndexTemplate = path.resolve('src/templates/singleTagIndex.js')
@@ -70,6 +82,7 @@ exports.createPages = ({graphql, actions}) => {
       ).then(result => {
         const posts = result.data.allMarkdownRemark.edges
 
+        createAboutPage(createPage)
         createTagPages(createPage, posts)
 
         posts.forEach(({node}, index) => {

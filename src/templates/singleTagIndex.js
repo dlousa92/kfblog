@@ -6,6 +6,7 @@ const SingleTagIndex = ({data, pageContext}) => {
   const { posts, tagName } = pageContext
   return (
     <div>
+      <Header />
       <div>
         Posts about {tagName}
       </div>

@@ -1,8 +1,8 @@
 
 module.exports = {
   siteMetadata: {
-    title: 'Keyforge Blog',
-    description: 'This is a blog that talks about the Unique Card Game, Keyforge'
+    title: 'Three Keys',
+    description: 'A Keyforge Blog'
   },
   plugins: [
     `gatsby-transformer-remark`,
