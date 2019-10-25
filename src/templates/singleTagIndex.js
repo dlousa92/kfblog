@@ -1,12 +1,10 @@
 import React from 'react'
-import Header from '../components/Header/Header'
 import { graphql, Link } from 'gatsby'
 
 const SingleTagIndex = ({data, pageContext}) => {
   const { posts, tagName } = pageContext
   return (
     <div>
-      <Header />
       <div>
         Posts about {tagName}
       </div>

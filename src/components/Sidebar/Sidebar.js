@@ -33,7 +33,7 @@ const Sidebar = () => {
     <div>
       <ul>
         {tags.map(tag => {
-          return <li>{tag}</li>
+          return <li key={tag}>{tag}</li>
         })}
       </ul>
     </div>

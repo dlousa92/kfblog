@@ -1,13 +1,11 @@
 import React from 'react'
-import Header from '../components/Header/Header'
 import Sidebar from '../components/Sidebar/Sidebar'
 import { graphql, Link } from 'gatsby'
 
-const Layout = ({data}) => {
+const Homepage = ({data}) => {
   const { edges } = data.allMarkdownRemark
   return (
     <div>
-      <Header />
       {edges.map(edge => {
         const {frontmatter} = edge.node
         return (
@@ -44,4 +42,4 @@ export const query = graphql`
   }
 `
 
-export default Layout
+export default Homepage
