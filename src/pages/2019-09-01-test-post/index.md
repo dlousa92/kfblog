@@ -1,8 +1,9 @@
 ---
 path: "/test-post"
 date: "2019-09-01"
-title: "A Test Post"
-tags: ['test', 'sample']
+title: "What's The Deal With Brobnar?"
+author: "Daniel Lousa"
+tags: ['Strategy', 'Analysis']
 excerpt: "This is a test post, enjoy"
 ---
 

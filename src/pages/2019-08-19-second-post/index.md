@@ -1,8 +1,9 @@
 ---
 path: "/second-post"
 date: "2019-08-19"
-title: "Second Post"
-tags: ['test', 'sample']
+title: "The Major Differences Between Sets You Should Know"
+author: "Daniel Lousa"
+tags: ['Set Review', 'Tournament Report']
 excerpt: "This is a test post, enjoy"
 ---
 
