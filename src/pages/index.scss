@@ -1,0 +1,9 @@
+@import '../styles/variables.scss';
+
+.app-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $text-grey;
+  font-family: $body-font;
+}
