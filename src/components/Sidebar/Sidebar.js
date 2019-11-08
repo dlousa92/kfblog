@@ -32,7 +32,7 @@ const Sidebar = () => {
   return (
     <div>
       <ul>
-        {tags.map(tag => {
+        {tags.sort().map(tag => {
           return <li key={tag}>{tag}</li>
         })}
       </ul>
