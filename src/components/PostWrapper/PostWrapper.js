@@ -1,9 +1,11 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
 const PostWrapper = (edges) => {
+  console.log(edges)
   return (
     <div>
-      {edges.map(edge => {
+      {edges.edges.map(edge => {
         const {frontmatter} = edge.node
         return (
           <div key={frontmatter.path}>
