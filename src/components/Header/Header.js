@@ -8,8 +8,12 @@ const TitleAndDescription = ({data}) => {
 
   return (
     <div className='app-header'>
-      <h1>{title}</h1>
-      <p>{description}</p>
+      <div className='app-header-triangleleft' />
+      <div className='app-header-text'>
+        <h1 className='app-header-text_title'>{title}</h1>
+        <p className='app-header-text_description'>{description}</p>
+      </div>
+      <div className='app-header-triangleright' />
     </div>
   )
 }
