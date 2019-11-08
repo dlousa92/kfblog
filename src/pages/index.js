@@ -1,22 +1,15 @@
 import React from 'react'
 import Sidebar from '../components/Sidebar/Sidebar'
+import PostWrapper from '../components/PostWrapper/PostWrapper'
 import { graphql, Link } from 'gatsby'
+import './index.scss'
 
 const Homepage = ({data}) => {
   const { edges } = data.allMarkdownRemark
   return (
-    <div>
-      {edges.map(edge => {
-        const {frontmatter} = edge.node
-        return (
-          <div key={frontmatter.path}>
-            <Link to={frontmatter.path}>
-              {frontmatter.title}
-            </Link>
-          </div>
-        )
-      })}
+    <div className='app-body'>
       <Sidebar />
+      <PostWrapper edges={edges} />
       <Link to='/tags'>Browse by Tag</Link>
     </div>
   )
