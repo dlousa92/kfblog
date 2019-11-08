@@ -1,0 +1,16 @@
+@import '../../styles/variables.scss';
+
+.post-wrapper {
+  margin-top: 2rem;
+
+  .post {
+    font-size: 2rem;
+    
+    &-title {
+      color: $text-grey;
+      text-decoration: none;
+      font-family: $title-font;
+      font-weight: 700;
+    }
+  }
+}
