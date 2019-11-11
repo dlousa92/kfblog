@@ -1,0 +1,47 @@
+@import '../../styles/variables.scss';
+
+.single-tag-wrapper {
+  flex-direction: row-wrap;
+  flex-basis: 25%;
+
+  &_header {
+    font-size: 1.5rem;
+    font-family: $title-font;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  &_tags {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.single-tag {
+  margin-right: .5rem;
+  margin-bottom: .5rem;
+  padding: .4rem;
+  color: $text-white;
+  border-radius: 5px;
+  text-decoration: none;
+
+  &_Analysis {
+    background-color: $tag-accent-analysis;
+  }
+  
+  &_Review {
+    background-color: $tag-accent-reviews;
+  }
+
+  &_News {
+    background-color: $tag-accent-news;
+  }
+
+  &_Strategy {
+    background-color: $tag-accent-strategy;
+  }
+
+  &_TournamentReport {
+    background-color: $tag-accent-reports;
+  }
+}

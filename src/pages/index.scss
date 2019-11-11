@@ -2,8 +2,16 @@
 
 .app-body {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   color: $text-grey;
   font-family: $body-font;
+  margin-top: 3rem;
+
+  &_postwrapper {
+    flex-basis: 75%;
+  }
+
+  &_sidebar {
+    flex-basis: 10%;
+  }
 }
