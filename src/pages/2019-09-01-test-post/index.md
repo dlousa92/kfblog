@@ -3,7 +3,7 @@ path: "/test-post"
 date: "2019-09-01"
 title: "What's The Deal With Brobnar?"
 author: "Daniel Lousa"
-tags: ['Strategy', 'Analysis']
+tags: ['Strategy', 'Analysis', 'News']
 excerpt: "This is a test post, enjoy"
 ---
 
