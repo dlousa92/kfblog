@@ -8,7 +8,7 @@ const Homepage = ({data}) => {
   const { edges } = data.allMarkdownRemark
   return (
     <div className='app-body'>
-      <PostWrapper edges={edges} />
+      <PostWrapper className='app-body_postwrapper' edges={edges} />
       <Sidebar />
     </div>
   )
