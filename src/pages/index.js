@@ -8,9 +8,8 @@ const Homepage = ({data}) => {
   const { edges } = data.allMarkdownRemark
   return (
     <div className='app-body'>
-      <Sidebar />
       <PostWrapper edges={edges} />
-      <Link to='/tags'>Browse by Tag</Link>
+      <Sidebar />
     </div>
   )
 }
