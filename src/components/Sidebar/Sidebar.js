@@ -1,5 +1,6 @@
 import React from 'react'
 import {graphql, Link, useStaticQuery} from 'gatsby'
+import './sidebar.scss'
 
 const Sidebar = () => {
   const data = useStaticQuery(
@@ -30,10 +31,15 @@ const Sidebar = () => {
     }
   })
   return (
-    <div>
-      {tags.sort().map(tag => {
-        return <Link key={tag} to={`tags/${tag}/`} >{tag}</Link>
-      })}
+    <div className='single-tag-wrapper'>
+      <h3 className='single-tag-wrapper_header'>Browse by Tag</h3>
+
+      <div className='single-tag-wrapper_tags'>
+        {tags.sort().map(tag => {
+          const tagClassName = tag.replace(/\s/g, '')
+          return <Link className={`single-tag single-tag_${tagClassName}`} key={tag} to={`tags/${tag}/`} >{tag}</Link>
+        })}
+      </div>
     </div>
   )
 }
