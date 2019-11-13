@@ -1,0 +1,25 @@
+@import './variables.scss';
+
+.tag {
+  color: $text-white;
+  
+  &_Analysis {
+    background-color: $tag-accent-analysis;
+  }
+  
+  &_Review {
+    background-color: $tag-accent-reviews;
+  }
+
+  &_News {
+    background-color: $tag-accent-news;
+  }
+
+  &_Strategy {
+    background-color: $tag-accent-strategy;
+  }
+
+  &_TournamentReport {
+    background-color: $tag-accent-reports;
+  }
+}
