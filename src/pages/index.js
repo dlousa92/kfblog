@@ -1,7 +1,7 @@
 import React from 'react'
 import Sidebar from '../components/Sidebar/Sidebar'
 import PostWrapper from '../components/PostWrapper/PostWrapper'
-import { graphql, Link } from 'gatsby'
+import { graphql } from 'gatsby'
 import './index.scss'
 
 const Homepage = ({data}) => {
@@ -28,6 +28,7 @@ export const query = graphql`
             tags,
             excerpt
           }
+          timeToRead
         }
       }
     }

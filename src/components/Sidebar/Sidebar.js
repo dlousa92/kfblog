@@ -37,7 +37,7 @@ const Sidebar = () => {
       <div className='single-tag-wrapper_tags'>
         {tags.sort().map(tag => {
           const tagClassName = tag.replace(/\s/g, '')
-          return <Link className={`single-tag single-tag_${tagClassName}`} key={tag} to={`tags/${tag}/`} >{tag}</Link>
+          return <Link className={`single-tag tag tag_${tagClassName}`} key={tag} to={`/tags/${tag}/`} >{tag}</Link>
         })}
       </div>
     </div>

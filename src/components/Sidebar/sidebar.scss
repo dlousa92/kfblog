@@ -21,27 +21,13 @@
   margin-right: .5rem;
   margin-bottom: .5rem;
   padding: .4rem;
-  color: $text-white;
   border-radius: 5px;
   text-decoration: none;
+  transition: all 0.3s ease;
 
-  &_Analysis {
-    background-color: $tag-accent-analysis;
-  }
-  
-  &_Review {
-    background-color: $tag-accent-reviews;
-  }
-
-  &_News {
-    background-color: $tag-accent-news;
-  }
-
-  &_Strategy {
-    background-color: $tag-accent-strategy;
-  }
-
-  &_TournamentReport {
-    background-color: $tag-accent-reports;
+  &:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
   }
 }
