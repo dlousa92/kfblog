@@ -4,22 +4,35 @@
   flex-basis: 80%;
 
   .post {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 
-    &-tag {
-      width: 15%;
-      font-size: .8rem;
-      padding: .2rem;
-      margin-bottom: .2rem;
-      border-radius: 5px;
+    &-info {
+      margin-top: .2rem;
+      display: flex;
+      align-items: center;
+
+      &_tag {
+        font-size: .8rem;
+        padding: .2rem;
+        border-radius: 5px;
+      }
+
+      &_meta {
+        margin-left: .5rem;
+        font-size: .8rem;
+      }  
     }
-    
+
     &-title {
       color: $text-grey;
       text-decoration: none;
       font-family: $title-font;
       font-weight: 700;
       font-size: 1.8rem;
+    }
+    
+    &-excerpt {
+      margin-top: .5rem;
     }
   }
 }
