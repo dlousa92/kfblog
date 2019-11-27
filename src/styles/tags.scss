@@ -22,4 +22,9 @@
   &_TournamentReport {
     background-color: $tag-accent-reports;
   }
+
+  &_AllTags {
+    color: $text-grey;
+    border: 1px $text-grey solid;
+  }
 }

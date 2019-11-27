@@ -1,6 +1,6 @@
 @import '../../styles/variables.scss';
 
-.single-tag-wrapper {
+.sidebar-tag-wrapper {
   flex-direction: row-wrap;
   flex-basis: 25%;
 
@@ -17,7 +17,7 @@
   }
 }
 
-.single-tag {
+.sidebar-tag {
   margin-right: .5rem;
   margin-bottom: .5rem;
   padding: .4rem;
@@ -26,6 +26,17 @@
   transition: all 0.3s ease;
 
   &:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  &:active {
+    transform: translateY(1px);
+    filter: saturate(170%);
+  }
+
+  &:focus {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
