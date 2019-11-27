@@ -31,15 +31,16 @@ const Sidebar = () => {
     }
   })
   return (
-    <div className='single-tag-wrapper'>
-      <h3 className='single-tag-wrapper_header'>Browse by Tag</h3>
+    <div className='sidebar-tag-wrapper'>
+      <h3 className='sidebar-tag-wrapper_header'>Browse by Tag</h3>
 
-      <div className='single-tag-wrapper_tags'>
+      <ul className='sidebar-tag-wrapper_tags'>
+        <Link className='sidebar-tag tag tag_AllTags' to='/'>All Tags</Link>
         {tags.sort().map(tag => {
           const tagClassName = tag.replace(/\s/g, '')
-          return <Link className={`single-tag tag tag_${tagClassName}`} key={tag} to={`/tags/${tag}/`} >{tag}</Link>
+          return <Link className={`sidebar-tag tag tag_${tagClassName}`} key={tag} to={`/tags/${tag}/`} >{tag}</Link>
         })}
-      </div>
+      </ul>
     </div>
   )
 }
