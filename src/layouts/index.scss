@@ -6,4 +6,11 @@
 .app {
   max-width: 1100px;
   margin: 0 auto;
+  
+  &-body {
+  color: $text-grey;
+  font-family: $body-font;
+  margin-top: 3rem;
+  }
 }
+

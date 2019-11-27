@@ -5,6 +5,6 @@ import './index.scss'
 export default ({ children }) => (
   <div className='app'>
     <Header />
-    {children}
+    <div className='app-body'>{children}</div>
   </div>
 )

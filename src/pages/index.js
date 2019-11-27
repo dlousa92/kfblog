@@ -7,10 +7,10 @@ import './index.scss'
 const Homepage = ({data}) => {
   const { edges } = data.allMarkdownRemark
   return (
-    <div className='app-body'>
+    <>
       <PostWrapper className='app-body_postwrapper' edges={edges} />
       <Sidebar />
-    </div>
+    </>
   )
 }
 
