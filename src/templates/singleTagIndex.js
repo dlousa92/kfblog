@@ -1,7 +1,7 @@
 import React from 'react'
-import { graphql, Link } from 'gatsby'
+import PostWrapper from '../components/PostWrapper/PostWrapper'
 
-const SingleTagIndex = ({data, pageContext}) => {
+const SingleTagIndex = ({pageContext}) => {
   const { posts, tagName } = pageContext
   return (
     <div>
@@ -9,17 +9,7 @@ const SingleTagIndex = ({data, pageContext}) => {
         Posts about {tagName}
       </div>
 
-      <ul>
-        {posts.map((post, index) => {
-          return (
-            <li key={index}>
-              <Link to={post.frontmatter.path}>
-                {post.frontmatter.title}
-              </Link>
-            </li>
-          )
-        })}
-      </ul>
+      <PostWrapper posts={posts} />
     </div>
   )
 }

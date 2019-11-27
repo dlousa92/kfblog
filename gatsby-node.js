@@ -60,10 +60,13 @@ exports.createPages = ({graphql, actions}) => {
           ) {
             edges {
               node {
+                timeToRead
                 frontmatter {
-                  path
                   title
+                  path
+                  date
                   tags
+                  excerpt
                 }
               }
             }

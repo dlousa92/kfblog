@@ -3,13 +3,24 @@ import { Link } from 'gatsby'
 import './postwrapper.scss'
 
 const PostWrapper = (edges) => {
+  let posts
+  let frontmatter
+  let timeToRead
+
+  // handles variable assignment if posts are coming from homepage or single tag template page
+  if (edges.edges) {
+    // homepage
+    posts = edges.edges
+  } else {
+    // single tag index page
+    posts = edges.posts
+  }
+
   return (
     <ul className='post-wrapper'>
-      {edges.edges.map(edge => {
-        const { frontmatter, timeToRead } = edge.node
+      {posts.map(post => {
+        post.node ? { frontmatter } = post.node : { frontmatter } = post
         const tagClassName = frontmatter.tags[1].replace(/\s/g, '')
-        console.log(frontmatter)
-        console.log('time to read', timeToRead)
         return (
           <li key={frontmatter.path} className='post'>
             <Link to={frontmatter.path} className='post-title'>
