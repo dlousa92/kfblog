@@ -32,7 +32,7 @@ const Sidebar = () => {
   })
   return (
     <div className='sidebar-tag-wrapper'>
-      <h3 className='sidebar-tag-wrapper_header'>Browse by Tag</h3>
+      <h3 className='sidebar-tag-wrapper_header'>Browse by Topic</h3>
 
       <ul className='sidebar-tag-wrapper_tags'>
         <Link className='sidebar-tag tag tag_AllTags' to='/'>All Tags</Link>
