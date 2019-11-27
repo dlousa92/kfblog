@@ -19,7 +19,6 @@ const PostWrapper = (edges) => {
   return (
     <ul className='post-wrapper'>
       {posts.map(post => {
-        console.log(post)
         post.node ? { frontmatter, timeToRead } = post.node : { frontmatter, timeToRead } = post
         const tagClassName = frontmatter.tags[1].replace(/\s/g, '')
         return (
