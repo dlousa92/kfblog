@@ -1,8 +1,8 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql, Link } from 'gatsby'
+import './blogpost.scss'
 
 const Template = props => {
-  console.log(props)
 
   const { next, prev } = props.pageContext
   const markdown = props.data.markdownRemark
@@ -11,7 +11,7 @@ const Template = props => {
   return (
     <div>
       <h1>{title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: content }} />
+      <div className='blogpost-html' dangerouslySetInnerHTML={{ __html: content }} />
 
       {next && <Link to={next.frontmatter.path}>Next</Link>}
       {prev && <Link to={prev.frontmatter.path}>Previous</Link>}
