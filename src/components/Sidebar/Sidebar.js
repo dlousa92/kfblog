@@ -35,11 +35,11 @@ const Sidebar = () => {
       <h3 className='sidebar-tag-wrapper_header'>Browse by Topic</h3>
 
       <ul className='sidebar-tag-wrapper_tags'>
-        <Link className='sidebar-tag tag tag_AllTags' to='/'>All Tags</Link>
         {tags.sort().map(tag => {
           const tagClassName = tag.replace(/\s/g, '')
           return <Link className={`sidebar-tag tag tag_${tagClassName}`} key={tag} to={`/tags/${tag}/`} >{tag}</Link>
         })}
+        <Link className='sidebar-tag tag tag_AllTags' to='/'>All Topics</Link>
       </ul>
     </div>
   )

@@ -1,0 +1,70 @@
+@import '../../styles/variables.scss';
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: $accent-blue;
+  color: $text-white;
+  padding: 2rem;
+
+  &-meta {
+    flex-basis: 30%;
+
+    &_header {
+      font-family: $display-font;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    &_text {
+      margin-bottom: 1rem;
+
+      a {
+        color: $text-white;
+        text-decoration: none;
+        border-bottom: 1px solid $text-white;
+      }
+    }
+
+    &_link {
+      font-size: .7rem;
+
+      a {
+        color: $text-white;
+        text-decoration: none;
+        border-bottom: 1px solid $text-white;
+      }
+    }
+  }
+
+  &-social {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex-basis: 20%;
+
+    &_backtotop {
+      margin-bottom: 2.5rem;
+      text-decoration: none;
+      color: $text-white;
+
+      span {
+        border-bottom: 1px solid $text-white;
+      }
+    }
+
+    &_icons {
+
+      .icon {
+
+        font-size: 3rem;
+        color: $text-white;
+
+        &:first-child {
+          margin-right: 2rem;
+        }
+      }
+    }
+
+  }
+}
