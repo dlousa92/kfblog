@@ -27,7 +27,8 @@ const PostWrapper = (edges) => {
               {frontmatter.title}
             </Link>
             <div className='post-info'>
-              <div className={`post-info_tag tag tag_${tagClassName}`}>{frontmatter.tags[0]}</div>
+              <p className={`post-info_tag tag tag_${tagClassName}`}>{frontmatter.tags[0]}</p>
+              <p>By {frontmatter.author}</p>
               <p className='post-info_meta'>{frontmatter.date} &loz; {timeToRead} min read</p>
             </div>
             <div className='post-excerpt'>{frontmatter.excerpt}</div>

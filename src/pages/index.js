@@ -24,6 +24,7 @@ export const query = graphql`
           frontmatter {
             title,
             path,
+            author,
             date,
             tags,
             excerpt
