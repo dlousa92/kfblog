@@ -1,5 +1,71 @@
 @import '../styles/variables.scss';
+@import '../styles/tags.scss';
 
-.blogpost-html {
-  font-family: $body-font;
+
+.blogpost {
+
+  &-meta {
+    margin-bottom: 2rem;
+
+    &_title {
+      font-family: $title-font;
+      font-weight: 700;
+      font-size: 2.5rem;
+    }
+
+    &_info {
+      display: flex;
+
+      p {
+        font-size: 1.2rem;
+      }
+
+      .tag-wrapper {
+        margin-top: .6rem;
+        margin-right: 1rem;
+      }
+
+      &-tag {
+      padding: .3rem;
+      border-radius: 5px;
+    }
+  }
+
+    
+}
+
+  &-html {
+    font-family: $body-font;
+    line-height: 1.5;
+    max-width: 60%;
+    margin: 0 auto;
+
+    p {
+      margin-bottom: 1rem;
+    }
+  } 
+
+  &-nav {
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0rem;
+
+    &_link {
+      text-decoration: none;
+      color: $text-grey;
+      font-family: $title-font;
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin: 0rem 2rem;
+      padding: .2rem;
+      border-bottom: 1px solid $text-grey;
+      transition: .3s ease all;
+
+      &:hover {
+        background-color: $accent-blue;
+        color: $text-white;
+        border-radius: 5px;
+      }
+    }
+  }
 }
